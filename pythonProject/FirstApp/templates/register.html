@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1><strong>The EMobilis Training Institute</strong></h1>
+<p>The institution has been working for the past ten years producing great minds to solve day to day technological problems.
+    <br> here at EMobilis we turn dreams to reality </p>
+
+<table>
+    <tr>
+        <th>COURSE NAME</th>
+        <th>DURATION</th>
+        <th>COST</th>
+    </tr>
+    <tr>
+        <td>Software Development</td>
+        <td>4 months</td>
+        <td>90,0000</td>
+    </tr>
+    <tr>
+        <td>Cyber-Security</td>
+        <td>5 months</td>
+        <td>54,000</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+<form action=""method="POST">
+    {% csrf_token %}
+ {{form.as_p}}
+    <button type="submit" name="save">SUBMIT</button>
+</form>
+{% endblock %}

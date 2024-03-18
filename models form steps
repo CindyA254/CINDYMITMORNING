@@ -1,0 +1,29 @@
+Create a models form
+go to models.py; create a class;
+example;
+class Registration(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email = models.EmailField()
+    password = models.CharField(max_length=50, min_length=8)
+
+Go to forms.py , create the  model form class;
+example;
+class RegisterForm(forms.ModelForm):
+    class Meta:
+        model = RegisterForm
+        fields = ['first_name', 'last_name', 'email', 'password']
+
+then go to the top of the same page and add; 
+from .models import Registration
+
+ensure you also add; the 'registerform'in the forms.py on the top.
+
+then go to dhango admin.py and add;
+
+from django.contrib import admin and Register your models here.
+example;
+from FirstApp.models import Registration
+admin.site.register(Registration)
+
+

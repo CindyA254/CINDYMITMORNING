@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="../../static/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/styles.css">
+</head>
+<body>
+<section>
+<h1>EMPLOYEE FORM</h1>
+<form action=""method="POST">
+    {% csrf_token %}
+  {{form.as_p}}
+    <button class="btn btn-warning" type="submit">SUBMIT</button>
+</form>
+<br>
+<a href="{% url 'employee_list' %}"><button>BACK TO LIST</button></a>
+</section>
+
+</body>
+</html>

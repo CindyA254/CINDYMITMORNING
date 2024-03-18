@@ -1,0 +1,23 @@
+django forms in form.py
+example:
+class RegistrationForm(forms.Form):
+    first_name = forms.CharField(max_length=100, required=True, label="Enter your first Name")
+    last_name = forms.CharField(max_length=100, required=True, label="Enter your last name")
+    email = forms.EmailField()
+    password = forms.CharField(widget=forms.PasswordInput)
+
+Go to views;
+embedd in the register function; Create a variable; form
+example;
+def register(request):
+    form = RegistrationForm()
+    return render(request, 'register.html', {"form":form})
+
+Go to your HTML template;register.html(where you want to place your form)
+now put your form in this way;
+<form action="">
+ {{form}}   
+</form>
+
+
+

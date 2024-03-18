@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #842029;
+    text-align: end;
+    color: white;
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: black;
+}
+
+body{
+    background-color: #031633;
+}
+
+p{
+    color: #0dcaf0;
+}
+

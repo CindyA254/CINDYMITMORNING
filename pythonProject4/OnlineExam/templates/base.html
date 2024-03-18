@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base>/</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+<button class="btn btn-danger">Home</button>
+<div class="row">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">eMobilis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="student.html">Student</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="teacher.html">Teacher</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+        </div>
+</nav>
+</div>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

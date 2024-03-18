@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1><strong>THIS IS OUR HOME PAGE</strong></h1>
+<p>The institution has been working for the past ten years producing great minds to solve day to day technological problems.
+    <br>here at EMobilis we turn dreams to reality </p>
+<form action=""method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+        <button type="submit" name="save">SUBMIT</button>
+
+</form>
+{% endblock %}

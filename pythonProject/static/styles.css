@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+table{
+    border-radius:25px;
+    color:white;
+    background-color:blueviolet;
+    text-align: center;
+    width:60%;
+    margin: 70px;
+    border: #212529;
+}
+body{
+background-color: #86b7fe;
+}
